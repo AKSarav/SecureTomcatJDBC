@@ -51,6 +51,7 @@ else
 	echo -e "\n Trying to Obtain JAVA_HOME during runtime"
 	echo "Enter the JAVA_HOME:"
 	read JAVA_HOME_IN
+	JAVA_HOME=$JAVA_HOME_IN
 	if [ -e $JAVA_HOME_IN/bin/javac -a -e $JAVA_HOME_IN/bin/java -a -e $JAVA_HOME_IN/bin/jar ]
 	then
 		echo "INFO: Java Home Validation Successful - RUNTIME. Good to Go"
