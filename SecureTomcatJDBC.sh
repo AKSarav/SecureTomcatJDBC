@@ -113,7 +113,7 @@ else
 fi
 
 echo "INFO: Creating a Jar file SecureTomcatJDBC.jar"
-$JAVA_HOME/bin/jar -cvfM SecureTomcatJDBC.jar *.class META-INF
+$JAVA_HOME/bin/jar -cvfe SecureTomcatJDBC.jar EncDecJDBCPass *.class
 
 if [ $? -ne 0 -o ! -e SecureTomcatJDBC.jar ]
 then
